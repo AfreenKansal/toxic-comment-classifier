@@ -16,8 +16,8 @@ import re
 
 app = Flask(__name__)
 #run_with_ngrok(app)
-filename = 'model.pkl'
-model = pickle.load(open('model.pkl','rb'))
+
+model = pickle.load(open('l_model.pkl','rb'))
 cv = pickle.load(open('vectorizer.pkl','rb'))
 
 def get_input(inp):
